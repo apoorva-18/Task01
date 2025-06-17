@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="container nav-container">
+      <h1 class="logo">MyBrand</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">&#9776;</div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <h2>Build Something Amazing</h2>
+      <p>Create clean and beautiful landing pages with ease and flexibility.</p>
+      <a href="#" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 MyBrand. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#">Facebook</a> |
+        <a href="#">Twitter</a> |
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
+
+</body>
+</html>
